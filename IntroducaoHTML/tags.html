@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags HTML</title>
+        
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+    <body>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+        <p>Parágrafo.</p>
+
+        <h2>Formatação de texto em html</h2>
+        <p>Esse é um <strong>texto em negrito</strong></p>
+        <p>Esse é um <em>texto em itálico</em></p>
+        <p>Esse é um <small>texto pequeno</small></p>
+        <p>Esse é um <ins>texto inserido (sublinhado)</ins></p>
+        <p>Esse é um <del>texto apagado</del></p>
+        <p>Esse é um <mark>texto marcado</mark></p>
+        <p>Esse é um <sup>texto superior</sup></p>
+        <p>Esse é um <sub>texto inferior</sub></p><br>
+
+        <h2>Links</h2>
+        <a href="imagens_e_links.html">Imagens e links HTML</a>
+        <p>Pode-se utilizar o id para direcionar a navegação para um ítem dentro da própria pagina. Para isso, coloque um id no elemento e no link que irá chamá-lo coloque este referido id.</p>
+        <a href="#redirecionado">Redirecionando</a>
+        <p id="redirecionado">O link acima redireciona para cá através do id.</p>
+
+        <h2>Formatações em CSS</h2>
+        <h3>Formatação de texto</h3>
+        <p>Espaçamento de parágrafo: text-indent: 35px;</p>
+        <p>Adornos de texto: text-decoration: none / underline / overline / line-through;</p>
+        <p>Espaçamento entre letras: letter-spacing: 1.2px;</p>
+        <p>Altura da linha: line-height: 10px / 3 (3x o tamanho da fonte)</p>
+        <p>Espaçamento entre palavras: word-spacing: 3px;</p>
+        <p>Sombra de texto: text-shadow: 2px 2px 5px black (deslocamento horizontal vertical afastamento cor de sobra)</p>
+        <p>Estilo do texto: font-style: italic / normal;</p>
+        <p>Fonte em negrito: font-weight: 100 ~ 900 / bold;</p>
+        <p>Tamanho da fonte: font-size: 2.3em / 32px / 3rem </p>
+        <p>Todo o texto em maiúsculo mas a maiúscula de verdade tamanho um pouco maior: font-variant: small-caps;</p>
+        <p>Caixa alta ou baixa: text-transform: uppercase / lowercase / capitalize;</p>
+
+        <h3>Formatação de links</h3>
+        <p>São 4 estados posíveis para o link:</p>
+        <ol>
+            <li>visited. link:visited</li>
+            <li>active. link:active</li>
+            <li>hover. link:hover</li>
+            <li>link. link:link</li>
+        </ol>
+
+        <h3>Formatação de caixas</h3>
+        <p>Quando se aplica as formatações de borda normalmente a borda acrescenta tamanho à minha caixa. Por exemplo, se eu defino uma div com largura de 100px e coloco uma borda de 10px, ela vai acabr tendo o tamanho total de 120px (100+10+10px). Para que a borda não acrescente tamanho à minha caixa, respeitando o limite definido da caixa, utiliza-se a propriedade box-sizing. box-sizing: border-box;</p>
+        
+        <p>A propriedade outline funciona como uma borda, mas ela fica num nível acima, então ela não consome espaço na caixa e acaba sobrescrevendo aquilo que ficaria na borda do elemento. ouline: 5px solid green;</p>
+
+        <p>Overflow é uma propriedade que faz com que elementos que extrapolam a caixa na qual ela está contida se comportem de uma determinada maneira.</p>
+        <ul>
+            <li>overflow: visible; deixa o conteúdo que extrapola ser mostrado (condição padrão)</li>
+            <li>overflow: hidden; esconde o elemento para o elemento que extrapola não seja mostrado</li>
+            <li>overflow: scroll; cria barras horizontal e vertical para navegação do conteúdo que extrapolou</li>
+            <li>overflow: auto; cria a barra de navegação apenas no sentido que extrapolou, vertical ou horizontal</li>
+            <li>overflow-x: visible; deixa visível no eixo x da caixa</li>
+            <li>overflow-y: hidden; esconde no eixo y da caixa.</li>
+        </ul>
+        <div style="width: 100px; height: 50px; background: blue; overflow: auto;">ppppppppppp ppppppppppp ppppppp pppppppppppp pppppppp ppppppppp ppppp </div>
+
+        <h3>Alinhamento horizontal</h3>
+        <p>Para alinhar um elemento horizontalmente à direita, esquerda ou centro se utiliza o margin "margin: auto;". para alinhar à direita "margin-left: auto;". Esta regra só funciona para elementos display block como uma div, por exemplo.</p>
+        <p>Se o elemento for uma imagem ele não vai respeitar a regra acima, pois uma imagem por padrão é display inline. Então para afzer essa centralização há duas maneiras:</p>
+        <ol>
+            <li>Se altera o display da imagem para display: block e faz o ajuste com o margin: auto.</li>
+            <li>Se coloca a umagem dentro de uma div (que é elemento block) e dentro da div se faz o text-aling: center. O inconveniente aqui é que todos os elementos que estiverem dentro dessa div também receberão o alinhamento horizontal, por isso, tom cuidao com sua aplicação.</li>
+        </ol>
+
+        <h3>Posicionamento (position)</h3>
+        <p>São 5 tipos: static, relative, fixed, absolute, sticky</p>
+        <p>Estes posicionamentos fazem o elemento flutuar na tela fazendo que fiquem em um nível superior a outros elementos.</p>
+       
+        <h4>position: static;</h4>
+        <p>É o posicionamento padrão. Vai respeitar as características do elemento, como block, inline ou inline-block. Ele <strong>não permite os deslocamentos top, bottom, right, left</strong></p>
+       
+        <h4>position: fixed;</h4>
+        <p>É o posicionamento fixo em relação a janela (não respeita seu elemento pai, somente a janela, viewport). Ele pode receber os deslocamentos top, bottom, right, left. Independente do que estiver acontecendo na janela, ele sempre vai ocupar a mesma posição. Por exemplo, se coloco right: 20px; e bottom: 20px; ele vai sempre ocupar essa posição embaixo à direita na janela. Este layout é muito comum naquelas janelas de chat que aparecem na navegação.</p>
+
+        <h4>position: relative;</h4>
+        <p>Aceita deslocamento top, bottom, right, left. Vai fazer o deslocamento em relação à posição original que ele ocuparia na tela</p>
+
+        <h4>position: absolute</h4>
+        <p>Aceita deslocamento top, bottom, right, left. Faz deslocamento em relação ao elemento pai no qual ele está contido dede que o elemento pai <strong>não seja static</strong>. Se seu elemento pai não for relative, por exemplo, ele vai se deslocar em relação ao body da página.</p>
+
+        <h4>position: sticky</h4>
+        <p>Aceita deslocamento. Ele faz com que o elemento ao ser rolado ele respeite o limite que é dado em seu deslocamento. Por exemplo se criarmos uma div e ela for definida como <strong>sticky</strong> e tiver posicionamento top: 10px; Se essa página for rolada para baixo quando este elemento stick chegar no ponto em que ele estiver a 10px do topo da página ele irá flutuar sobre todos os outros elementos. Esse recurso é interessante quando se quer deixar uma mensagem sempre fixa na tela, mesmo quando a página é rolada para baixo, ou então uma barra de menu, ou título de uma tabela sempre fique no topo.</p>
+
+        <h4>Deslocamento</h4>
+        <p>Exemplos:</p>
+        <p>top: 20px;</p>
+        <p>bottom: 10px;</p>
+        <p>right: 5px;</p>
+        <p>left: 5px;</p>
+
+        <h4>Profundidade: z-index</h4>
+        <p>O z-index faz o posicionamento de profundidade. Quanto maior o z-index mais superior o nível que o elemento ocupa. Se tiver 3 elementos: elemento A z-index: 1 (default); elemento B z-index: 2; elemento C z-index: 3; o elemento C ficará sobre o B, que ficará sobre o A.</p>
+        
+        <h4>float</h4>
+        <p>Faz um elemento inline flutuar ao lado de um elemento block</p>
+        <p>float: right / left / top / bottom;</p>
+
+        <h3>Alinhamento vertical</h3>
+        <p>3 formas. Utilizando line-height, position e padding</p>
+        <ul>
+            <li>line-height</li>
+            <p>Para esta opção se coloca o tamanho da linha de texto do tamanho da caixa a qual o elemento está inserido. Se ele está numa div de 100px de altura o line-height deve ter também 100px. O inconveniente está em essa posição ser fixa, não admitir valores por cento. Não admite line-height: 50%;</p>
+            <li>position</li>
+            <p>Para sua utilização o conteúdo pai deve assumir position diferente de static(padrão), podendo ser relative, por exemplo. Já o conteúdo que se quer alinhar deve ter position absolute e top: 50%; e left: 50%;. Ao se aplicar estes efeitos vai ser preciso ainda mais um ajuste. Deve ser aplicado transform: translate(-50% -50%); para deslocar o ítem vertical e horizontalmente.</p>
+            <li>padding</li>
+            <p>É a forma mais simples das três, mas tem que levar em consideração as dimensões do ítem que se quer alinhar como: altura da linha e largura do elemento. Se a linha for de 12px e colocar padding-top: 100px; e padding-bottom: 100px; o total vai ser de 212px de altura. Se quiser respeitar o tamanho máximo de 200px deve-se fazer padding-top: 94px; e padding-bottom: 94px;</p>
+        </ul>
+
+        <h3>Responsividade</h3>
+        
+        <h4>Viewport</h4>
+        <p> < meta name="viewport" content="width=device-width, initial-scale=1.0"> </p>
+
+        <h4>Media Queries</h4>
+        <p>Define um tipo de formatação de acordo com o tamanho das telas</p>
+        <p>Quando o desenvolvimento é feito pensando primeiro no mobile e as queries depois ajustam para formatos grandes s dá o nome de mobile first.</p>
+        <p>@media screen and (max-width: 700px){<br><br>}</p>
+        <p>@media screen and (max-width: 500px){<br><br>}</p>
+        <p>Pode se utilizar max-width ou min-width.</p>
+
+        <script src="./JS/script.js"></script>
+
+    </body>
+</html>

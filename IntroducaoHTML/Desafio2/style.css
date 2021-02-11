@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+}
+
+#container{
+    margin: auto;
+    margin-top: 100px;
+    background-image: url("./Imagens/backgorund.png");
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+.titulo_cartao{
+    font-weight: 100;
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+ul{
+    padding-left: 20px;
+    width: 180px; 
+    /*Definida uma largura fixa para limitar a ação do link próximo ao nome e não em toda a largura do cartão*/
+}
+
+li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

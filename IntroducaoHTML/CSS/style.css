@@ -1,0 +1,74 @@
+body{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.verde{
+    color: green;
+}
+
+#azul{
+    color: blue;
+}
+
+#titulo{
+    color: red;
+}
+
+#bg1{
+    background-image: url(../Imagens/lights1.jpg);
+    color: whitesmoke;
+    background-attachment: fixed;
+}
+
+#bg2{
+    background-image: url(../Imagens/lights2.jpg);
+    color: whitesmoke;
+    background-attachment: fixed;
+
+}
+
+#bg3{
+    background-image: url(../Imagens/lights3.jpeg);
+    color: yellow;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fundo_fixo{
+    background-image: url("https://www.assespropr.org.br/wp-content/uploads/2019/09/foto-aerea-curitiba-635x399.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+
+.border{
+    border: 1px solid pink;
+    border-radius: 100px;
+    background: pink;
+    padding: 60px 40px;
+    padding-bottom: 0;
+    height: 600px;
+    width: 600px;
+    text-align: justify;
+    line-height: 50px;
+}
+
+.link1{
+    background: #0066ff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.link1:hover{
+    background: #fff;
+    border: 2px solid #0066ff;
+    color: #0066ff;
+}
+
+
